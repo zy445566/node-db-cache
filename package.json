@@ -1,0 +1,29 @@
+{
+  "name": "db-cahce",
+  "version": "1.0.0",
+  "description": "for db cache",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --harmony index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zy445566/node-db-cache.git"
+  },
+  "keywords": [
+    "nodejs",
+    "db",
+    "cache"
+  ],
+  "author": "zy445566",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zy445566/node-db-cache/issues"
+  },
+  "homepage": "https://github.com/zy445566/node-db-cache#readme",
+  "dependencies": {
+    "mysql": "^2.12.0",
+    "redis": "^2.6.3"
+  }
+}
