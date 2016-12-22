@@ -15,6 +15,7 @@ reading and writing of distributed and the second level cache function
 ###first
 open your mysql and your redis;
 sql into mysql:
+```sql
 create database `test`;
 DROP TABLE IF EXISTS `test`.`user`;
 CREATE TABLE `test`.`user` (
@@ -26,7 +27,7 @@ INSERT INTO `user` VALUES ('1', 'zs');
 INSERT INTO `user` VALUES ('2', 'ls');
 INSERT INTO `user` VALUES ('3', 'ww');
 INSERT INTO `user` VALUES ('4', 'hehe');
-
+```
 ###second
 mkdir test
 npm install db-cache
