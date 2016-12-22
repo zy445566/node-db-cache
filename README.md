@@ -32,6 +32,7 @@ mkdir test
 npm install db-cache
 vim test.js
 input:
+```js
 var config = {
 	db:{
 		use:'mysql',
@@ -120,7 +121,7 @@ var user = new User(enigine,1,true);
 // user.getUser(1);
 // user.updateUser(1);
 user.getUser(1);
-
+```
 ###third
 node --harmony test.js
 
