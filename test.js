@@ -81,6 +81,8 @@ class User extends BaseModule
 	}
 }
 
+//you can use uid as cacheId
+var uid = 1;
 var user = new User(enigine,1,true);
 // user.getUser(1);
 // user.getUser(1);
