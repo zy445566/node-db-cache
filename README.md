@@ -1,20 +1,20 @@
 # node-db-cache
-for nodejs db cache module
+		for nodejs db cache module
 
 #require
-node -v >7.10
-need open --harmony
+		node -v >7.10
+		need open --harmony
 
 #what is?
-Separation based on mysql and redis database, 
-reading and writing of distributed and the second level cache function
+		Separation based on mysql and redis database, 
+		reading and writing of distributed and the second level cache function
 
 
 #How To Use?
 ## for example
-###first
-open your mysql and your redis;
-sql into mysql:
+-first
+		open your mysql and your redis;
+		sql into mysql:
 ```sql
 create database `test`;
 DROP TABLE IF EXISTS `test`.`user`;
@@ -28,11 +28,11 @@ INSERT INTO `user` VALUES ('2', 'ls');
 INSERT INTO `user` VALUES ('3', 'ww');
 INSERT INTO `user` VALUES ('4', 'hehe');
 ```
-###second
-mkdir test
-npm install db-cache
-vim test.js
-input:
+-second
+		mkdir test
+		npm install db-cache
+		vim test.js
+		input:
 ```js
 var config = {
 	db:{
@@ -123,16 +123,16 @@ var user = new User(enigine,1,true);
 // user.updateUser(1);
 user.getUser(1);
 ```
-###third
-node --harmony test.js
+-third
+		node --harmony test.js
 
-you can see(first):
-[ RowDataPacket { uid: 1, name: 'zs1' } ]
+		you can see(first):
+		[ RowDataPacket { uid: 1, name: 'zs1' } ]
 
-then command+c,double time to exit,then run "node --harmony test.js" again:
+		then command+c,double time to exit,then run "node --harmony test.js" again:
 
-you can see(again,now in cache):
-[ { uid: 1, name: 'zs1' } ]
+		you can see(again,now in cache):
+		[ { uid: 1, name: 'zs1' } ]
 
 
 
