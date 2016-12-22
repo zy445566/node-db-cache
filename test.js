@@ -55,9 +55,9 @@ var config = {
 	}
 };
 
-var index = require('./index');
-var DBCacheEngine = index.DBCacheEngine;
-var BaseModule = index.BaseModule;
+var dbCache = require('./index');
+var DBCacheEngine = dbCache.DBCacheEngine;
+var BaseModule = dbCache.BaseModule;
 var enigine = DBCacheEngine.getEngine(config);
 class User extends BaseModule
 {
