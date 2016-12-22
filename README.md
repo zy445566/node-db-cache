@@ -29,10 +29,12 @@ INSERT INTO `user` VALUES ('3', 'ww');
 INSERT INTO `user` VALUES ('4', 'hehe');
 ```
 -second
-		mkdir test
-		npm install db-cache
-		vim test.js
-		input:
+```sh
+mkdir test
+npm install db-cache
+vim test.js
+```
+input:
 ```js
 var config = {
 	db:{

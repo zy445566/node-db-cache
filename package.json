@@ -1,6 +1,6 @@
 {
   "name": "db-cache",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "for db cache",
   "main": "index.js",
   "scripts": {
