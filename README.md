@@ -30,7 +30,8 @@ INSERT INTO `user` VALUES ('4', 'hehe');
 ```
 -second
 ```sh
-mkdir test
+mkdir -p test
+cd test
 npm install db-cache
 vim test.js
 ```
