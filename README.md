@@ -108,14 +108,12 @@ class User extends BaseModule
 	async getUser(uid)
 	{
 		var res = await this.mySelect('select * from user where uid=?',[uid],60);
-		console.log(res);
 		return res;
 	}
 
 	updateUser(uid)
 	{
 		var res = this.myUpdate('Update user SET name="zs1" where uid=?',[uid]);
-		// console.log(res);
 		return res;
 	}
 }
@@ -126,7 +124,12 @@ var user = new User(enigine,uid,true);
 // user.getUser(1);
 // user.getUser(1);
 // user.updateUser(1);
-user.getUser(1);
+user.getUser(1)
+.then((res)=>{
+	console.log(res);
+	//if you need end Connect
+	user.endConnect();
+});
 ```
 -third
 		node --harmony test.js
